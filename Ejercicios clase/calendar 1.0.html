@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <style> 
+        body, html{
+            background-color:#273746;
+        }
+        .hour{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(1,1fr);
+            font-size: 7rem;
+            text-indent: 0.5rem;
+            line-height: 1em;
+            padding: 2rem;
+            color: white;
+            justify-items: center;
+            
+        }
+        .date{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(1,1fr);
+            text-align: center;
+            color: white;
+            font-size:2.5rem;
+            padding: 2rem;
+           
+
+        }
+        .arrow{
+            border: solid white;
+            border-width: 0px 5px 5px 0px;
+            display: inline-block;
+            padding: 1rem;
+            background-color: #273746;
+
+}
+        .up{
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+        }  
+
+        .down{
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+ 
+        }
+
+        .monthYear{
+            font-size:2.5rem;
+            padding: 2rem;
+            color: #FFFFFF;
+            text-align: center;
+            background-color:#273746;
+        }
+        .month{
+            display:grid;
+            grid-template-columns: repeat(7,1fr);
+            grid-template-rows: repeat(7,1fr);
+            text-align: center;
+        }
+        .nameDays{
+            
+            color: #FFFFFF;
+            text-align: center;
+            font-size:2rem;
+            padding: 2rem;
+            border:none
+        }
+        .offDays {
+            background-color:#273746;
+            color: #7F8C8D;
+            text-align: center;
+            font-size:2rem;
+            padding: 2rem;
+            border: none
+        }
+        .onDays {
+            background-color:#273746;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 2rem;
+            padding: 2rem;
+            border:none
+        }
+        .onDays:hover, .offDays:hover, .arrow:hover{
+            opacity: 0.4;
+           
+        }
+       
+    </style>
+</head>
+<body>
+<div class="hour">18:10:33</div>
+<div class="date">domingo, 10 de enero de 2021</div>
+<hr color="white" size=2>
+<div class="date">
+    <div class="monthYear">enero 2021</div>
+    <button class="arrow"><i class="arrow up"></i></button>
+    <button class="arrow"><i class="arrow down"></i></button>
+</div>
+</div class="date">
+
+<div class="month">
+    <div class="nameDays">L</div>
+    <div class="nameDays">M</div>
+    <div class="nameDays">X</div>
+    <div class="nameDays">J</div>
+    <div class="nameDays">V</div>
+    <div class="nameDays">S</div>
+    <div class="nameDays">D</div>
+    <button class="offDays">28</button>
+    <button class="offDays">29</button>
+    <button class="offDays">30</button>
+    <button class="offDays">31</button>
+    <button class= "onDays">1</button>
+    <button class= "onDays">2</button>
+    <button class= "onDays">3</button>
+    <button class= "onDays">4</button>
+    <button class= "onDays">5</button>
+    <button class= "onDays">6</button>
+    <button class= "onDays">7</button>
+    <button class= "onDays">8</button>
+    <button class= "onDays">9</button>
+    <button class= "onDays">10</button>
+    <button class= "onDays">11</button>
+    <button class= "onDays">12</button>
+    <button class= "onDays">13</button>
+    <button class= "onDays">14</button>
+    <button class= "onDays">15</button>
+    <button class= "onDays">16</button>
+    <button class= "onDays">17</button>
+    <button class= "onDays">18</button>
+    <button class= "onDays">19</button>
+    <button class= "onDays">20</button>
+    <button class= "onDays">21</button>
+    <button class= "onDays">22</button>
+    <button class= "onDays">23</button>
+    <button class= "onDays">24</button>
+    <button class= "onDays">25</button>
+    <button class= "onDays">26</button>
+    <button class= "onDays">27</button>
+    <button class= "onDays">28</button>
+    <button class= "onDays">29</button>
+    <button class= "onDays">30</button>
+    <button class= "onDays">31</button>
+    <button class= "offDays">1</button>
+    <button class="offDays">2</button>
+    <button class="offDays">3</button>
+    <button class="offDays">4</button>
+    <button class="offDays">5</button>
+    <button class="offDays">6</button>
+    <button class="offDays">7</button>
+</div class="month">
+</body>
+</html>
